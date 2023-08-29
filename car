@@ -48,3 +48,30 @@ class Car {
 
 }
 
+Baleno.java
+class Baleno extends Car{
+private boolean isHybrid;
+	public Baleno(String color, boolean isHybrid) {
+		super("Baleno", color);
+		// TODO Auto-generated constructor stub
+		this.isHybrid=isHybrid;
+	}
+	
+	public void assemble() {
+		System.out.println("Assembling a Baleno in"+getColor()+"Color.");
+	}
+	private String getColor() {
+		// TODO Auto-generated method stub
+		return "yellow";
+	}
+
+	public void toggleHybridMode() {
+		if(isHybrid) {
+			System.out.println("Switching BAleno to Hybrid mode.");
+		}
+		else {
+			System.out.println("This baleno model is not Hybrid");
+		}
+	}
+
+}
