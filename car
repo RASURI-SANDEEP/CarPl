@@ -1,0 +1,32 @@
+import java.util.Scanner;
+class CarPlant {
+	public static void main(String[] args) {
+		CarFactory carFactory=new CarFactory();
+		System.out.print("1.baleno and 2. swift ");
+		Scanner sc=new Scanner(System.in);
+		int choice=sc.nextInt();
+		if(choice==1) {
+		Baleno baleno=new Baleno("Silver",true);
+		baleno.assemble();
+		baleno.paint();
+		baleno.testDrive();
+		baleno.toggleHybridMode();
+		EngineType a=new EngineType();
+		a.evengine();
+		Carbody1 b= new Carbody1();
+		b.start();
+		}
+		else if(choice==2) {
+		Swift swift=new Swift("Yellow",6);
+		swift.assemble();
+		swift.paint();
+		swift.testDrive();
+		System.out.println("Number of airbags in Swift:"+swift.numberOfAirbags());
+	}
+		else {
+			System.out.println("give correct input");
+		}
+
+}
+}
+
