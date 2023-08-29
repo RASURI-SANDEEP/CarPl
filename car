@@ -29,4 +29,22 @@ class CarPlant {
 
 }
 }
+class Car {
+	private String model;
+	private String color;
+	public Car(String model,String color) {
+		this.model=model;
+		this.color=color;
+	}
+	public void assemble() {
+		System.out.println("Assembling a"+color+" "+model+"car");
+	}
+	public void paint() {
+		System.out.println("Painting the color"+color+".");
+	}
+	public void testDrive() {
+		System.out.println("Taking the"+color+model+" car for a test drive");
+	}
+
+}
 
